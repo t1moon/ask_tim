@@ -1,0 +1,38 @@
+{% load staticfiles %}
+<div class="row question">
+    <!--Avatar + likes -->
+    <div class="col-md-2 avatar-likes">
+        <img src="{% static '/images/NinjaAvatar.png' %}" class="img-thumbnail" width="90px">
+        <div class="likes">
+            <img src="{% static '/images/dislike.png' %}" class="likes" style="width: 20px; height: 20px;">
+            <span class="likes">5</span>
+            <img src="{% static '/images/like.png' %}" class="likes">
+        </div>
+    </div>
+    <!-- End of avatar + likes -->
+    <!--Question + tags-->
+    <div class="col-md-10">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2><a href="{% url 'question' id %}" class="">{{ title }}</a></h2>
+                    <p>{{ body }}</p>
+                </div>
+            </div>
+            <!-- Question Tags in the bottom -->
+            <div class="row question-tag">
+                <div class="col-md-4">
+                    <a href="#">answer(3)</a>
+                </div>
+                <div class="col-md-8">
+                    Tags:
+                    {% for i in tag %}
+                        <a href="{% url 'tag' i %}">{{ i }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            <!-- End of Question Tags in the bottom -->
+        </div>
+    </div>
+    <!--End of Question + tags-->
+</div>

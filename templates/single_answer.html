@@ -1,0 +1,30 @@
+{% load staticfiles %}
+<!------------------- COMMENT -------------------------------------------->
+<div class="row question">
+    <!--Avatar + likes -->
+    <div class="col-md-2 avatar-likes">
+        <img src="{% static '/images/NinjaAvatar.png' %}" class="img-thumbnail" width="90px">
+        <div class="likes">
+            <img src="{% static '/images/dislike.png' %}" class="likes" style="width: 20px; height: 20px;">
+            <span class="likes">5</span>
+            <img src="{% static '/images/like.png' %}" class="likes">
+        </div>
+    </div>
+    <!-- End of avatar + likes -->
+    <!--Comment + correct -->
+    <div class="col-md-10">
+        <div class="container-fluid">
+            <div class="row" style="padding-top: 10px;">
+                <div class="col-md-12">
+                    <p>{{ body }}</p>
+                </div>
+            </div>
+            <!-- Comment correct in the bottom -->
+            <div class="dop">
+                <input type="checkbox" class="checkbox" name="option2" value=""><span class="check">Right answer</span>
+            </div>
+            <!-- End of comment correct -->
+        </div>
+    </div>
+</div>
+<!------------------- END of COMMENT -------------------------------------------->

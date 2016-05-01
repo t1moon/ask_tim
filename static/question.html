@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>AskTim</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="myCSS.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+<!--TopNavbar -->
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">AskTim</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <!--SearchBar -->
+            <form class="navbar-form navbar-left custom-search" role="search">
+                <div class="form-group search-form">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-primary">Ask</button>
+            </form>
+            <!-- UserBlock -->
+            <div class="userbar">
+                <img src="NinjaAvatar.png" class="img-circle userbar-avatar">
+                <ul class="userbar-text">
+                    <li>Dr.Pepper</li>
+                    <li><a href="setting.html">Setting</a> <a href="#">Log off</a></li>
+                </ul>
+            </div>
+
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<!---------------------------MAIN --------------------------------------->
+<div class="container">
+    <!---------------------------START of MAIN row -------------------------->
+    <div class="row">
+        <!----------------------------LeftColumn -------------------------------->
+        <div class="col-md-8">
+            <div class="row" style="border-bottom: black 3px solid; padding-bottom: 15px;"> <!-- QUESTION -->
+                <!--Avatar + likes -->
+                <div class="col-md-2 avatar-likes">
+                    <img src="images/NinjaAvatar.png" class="img-thumbnail" width="90px">
+                    <!-- <input type="text" value="5" style="width: 80px; margin-top: 10px;" > -->
+                    <div class="les">
+                        <img src="images/dislike.png" class="likes" style="width: 20px; height: 20px;">
+                        <span class="likes">5</span>
+                        <img src="images/like.png" class="likes">
+                    </div>
+                </div> <!-- End of avatar + likes -->
+                <!--Question + tags-->
+                <div class="col-md-10">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1><a href="#">How to build a moon park?</a></h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <!-- Question Tags in the bottom -->
+                        <div class="row question-tag">
+                            <div class="col-md-12">
+                                Tags:
+                                <a href="">black-jack</a>
+                                ,
+                                <a href="">bender</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------------- COMMENT -------------------------------------------->
+            <div class="row question">
+                <!--Avatar + likes -->
+                <div class="col-md-2 avatar-likes">
+                    <img src="images/NinjaAvatar.png" class="img-thumbnail" width="90px">
+                    <!-- <input type="text" value="5" style="width: 80px; margin-top: 10px;" > -->
+                    <div class="les">
+                        <img src="images/dislike.png" class="likes" style="width: 20px; height: 20px;">
+                        <span class="likes">5</span>
+                        <img src="images/like.png" class="likes">
+                    </div>
+                </div> <!-- End of avatar + likes -->
+
+                <!--Comment + correct -->
+                <div class="col-md-10">
+                    <div class="container-fluid">
+                        <div class="row" style="padding-top: 10px;">
+                            <div class="col-md-12">
+                                <p>In tollit numquam mei. Quo tamquam salutandi ei. Autem splendide hendrerit eu per,
+                                    has te forensibus omittantur. Has quas idque cu, ubique menandri adipiscing est ad,
+                                    eam cu agam commune platonem. Te cum minim latine dissentiunt.</p>
+                            </div>
+                        </div>
+                        <!-- Comment correct in the bottom -->
+                        <div class="dop">
+                            <input type="checkbox" class="checkbox" name="option2" value=""><span class="check">Right answer</span>
+                        </div>
+                        <!-- End of comment correct -->
+                    </div>
+                </div>
+            </div>
+            <!------------------- END of COMMENT -------------------------------------------->
+            <!------------------- COMMENT -------------------------------------------->
+            <div class="row question">
+                <!--Avatar + likes -->
+                <div class="col-md-2 avatar-likes">
+                    <img src="NinjaAvatar.png" class="img-thumbnail" width="90px">
+                    <!-- <input type="text" value="5" style="width: 80px; margin-top: 10px;" > -->
+                    <div class="likes">
+                        <img src="dislike.png" class="likes" style="width: 20px; height: 20px;">
+                        <span class="likes">5</span>
+                        <img src="like.png" class="likes">
+                    </div>
+                </div> <!-- End of avatar + likes -->
+
+                <!--Comment + correct -->
+                <div class="col-md-10">
+                    <div class="container-fluid">
+                        <div class="row" style="padding-top: 10px;">
+                            <div class="col-md-12">
+                                <p>In tollit numquam mei. Quo tamquam salutandi ei. Autem splendide hendrerit eu per,
+                                    has te forensibus omittantur. Has quas idque cu, ubique menandri adipiscing est ad,
+                                    eam cu agam commune platonem. Te cum minim latine dissentiunt. </p>
+                            </div>
+                        </div>
+                        <!-- Comment correct in the bottom -->
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-primary">
+                                <input type="checkbox" autocomplete="off"> Correct
+                            </label>
+                        </div>
+                        <!-- End of comment correct -->
+                    </div>
+                </div>
+            </div>
+            <!------------------- END of COMMENT -------------------------------------------->
+            <!------------------- Your COMMENT -------------------------------------------->
+            <div class="row comment-hr">
+                <textarea class="comment-text form-control" placeholder="Type your comment here..."></textarea>
+            </div>
+            <!------------------- ANSWER button -------------------------------------------->
+            <div class="row">
+                <div>
+                    <button type="submit" class="btn btn-default button-ask">Answer</button>
+                </div>
+            </div>
+
+            <!-- Paginator -->
+            <ul class="pagination">
+                <li>
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+
+
+        </div>
+        <!----------------------------Right Column -------------------------------->
+        <div class="col-md-3 col-md-offset-1">
+            <!----------------------------Tag Cloud -------------------------------->
+            <h2 class="padding-header">Popular tags</h2>
+            <ul class="tagCloud">
+                <li><a href="#" class="style1">Perl</a></li>
+                <li><a href="#" class="style3">C++</a></li>
+                <li><a href="#" class="style2">Firefox</a></li>
+                <li><a href="#" class="style4">ParkMail</a></li>
+                <li><a href="#" class="style1">php</a></li>
+                <li><a href="#" class="style3">PyCharm</a></li>
+                <li><a href="#" class="style2">Div</a></li>
+                <li><a href="#" class="style4">Voloshin</a></li>
+                <li><a href="#" class="style1">Python</a></li>
+            </ul>
+            <h2 class="padding-header" style="margin-top: 30px;">Best Members</h2>
+            <ul class="bestMember">
+                <li><a href="#">Darov</a></li>
+                <li><a href="#">Timur</a></li>
+                <li><a href="#">Aliev</a></li>
+                <li><a href="#">Dr.Pepper</a></li>
+            </ul>
+        </div>
+
+    </div> <!--END of row-->
+</div><!-- /.container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="static/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

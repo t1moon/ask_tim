@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <!--------------------------------- QUESTION -------------------------------->
+<div class="row" style="border-bottom: black 3px solid; padding-bottom: 15px;"> <!-- QUESTION -->
+    <!--Avatar + likes -->
+    <div class="col-md-2 avatar-likes">
+        <img src="{% static '/images/NinjaAvatar.png' %}"  class="img-thumbnail" width="90px">
+        <div class="likes">
+            <img src="{% static '/images/dislike.png' %}" class="likes" style="width: 20px; height: 20px;">
+            <span class="likes">5</span>
+            <img src="{% static '/images/like.png' %}" class="likes">
+        </div>
+    </div>
+    <!-- End of avatar + likes -->
+    <!--Question + tags-->
+    <div class="col-md-10">
+        <div class="container-fluid" >
+            <div class="row">
+                <div class="col-md-12">
+                <h1> {{ question.title }}</h1>
+                <p>{{ question.body }}</p>
+                </div>
+            </div>
+            <!-- Question Tags in the bottom -->
+            <div class="row question-tag" >
+              <div class="col-md-12">
+                Tags:
+                {% for i in question.tag %}
+                    <a href="{% url 'tag' i %}">{{i}}</a>
+                  {% endfor %}
+              </div>
+            </div>
+            <!-- End of Question Tags in the bottom -->
+            </div>
+    </div>
+</div>
+    {% for answer in answers %}
+        {% include 'single_answer.html' with body=answer.body %}
+    {% endfor %}
+<!------------------- Your COMMENT -------------------------------------------->
+        <div class="row comment-hr">
+          <textarea class="comment-text form-control" placeholder="Type your comment here..."></textarea>
+        </div>
+ <!------------------- ANSWER button -------------------------------------------->
+        <div class="row">
+          <div>
+            <button type="submit" class="btn btn-default button-ask">Answer</button>
+          </div>
+        </div>
+
+{% endblock %}

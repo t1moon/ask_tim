@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <h2>Sign Up</h2>
+    <div class="row" style="margin-top: 20px">
+        <div class="alert alert-danger"><p style="color: darkred">Sorry, this email already registred!</p></div>
+    </div>
+
+    <div class="register">
+        <div class="login-form"><span>Login</span></div>
+        <div><input type="text" class="form-control reg" maxlength="300" name="text" aria-describedby="basic-addon1">
+        </div>
+        <div class="login-form"><span>Email</span></div>
+        <div><input type="text" class="form-control reg" maxlength="300" name="text" aria-describedby="basic-addon1">
+        </div>
+        <div class="login-form"><span>Nickname</span></div>
+        <div><input type="text" class="form-control reg" maxlength="300" name="text" aria-describedby="basic-addon1">
+        </div>
+        <div class="login-form"><span>Password</span></div>
+        <div><input type="password" class="form-control reg" maxlength="50" name="password"
+                    aria-describedby="basic-addon1" placeholder="Password length (minimum 5)" pattern=".{5,}"
+                    required="required" value=""></div>
+        <div class="login-form"><span>Repeat password</span></div>
+        <div><input type="password" class="form-control reg" maxlength="50" name="password"
+                    aria-describedby="basic-addon1" placeholder="Repeat your password" pattern=".{5,}"
+                    required="required" value=""></div>
+        <div class="login-form"><span>Upload avatar</span></div>
+        <div>
+            <img src="{% static '/images/NinjaAvatar.png' %}" style="height: 100px; width: 100px;">
+            <div><input type="file" id="exampleInputFile" style="padding-top: 10px; margin-left: 200px"></div>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-default button-ask" style="margin-left: 200px">Sign Up</button>
+        </div>
+    </div> <!--end of register-->
+{% endblock %}

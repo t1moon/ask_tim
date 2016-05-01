@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <div class="register"><!--start of register-->
+        <div class="login-form"><span>Question</span></div>
+        <div><input type="text" class="form-control vopros" maxlength="300" name="text" aria-describedby="basic-addon1"/></div>
+
+        <div class="login-form"><span>Text</span></div>
+        <div class="rel"><textarea maxlength="1000" name="text" class="question-text" placeholder="Type your question here.."></textarea></div>
+
+        <div class="login-form"><span>Tags</span></div>
+        <div><input type="text" class="form-control tags" maxlength="50" name="text" aria-describedby="basic-addon1" name="tags[]" value=""/></div>
+        <div><button type="submit" class="btn btn-default button-ask" style="margin-left: 200px">Ask</button></div>
+    </div> <!--end of register-->
+{% endblock %}

@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>AskTim</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="myCSS.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+<!--TopNavbar -->
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" >AskTim</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+<!--SearchBar -->
+          <form class="navbar-form navbar-left custom-search" role="search">
+        <div class="form-group search-form">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-primary">Ask</button>
+          </form>
+<!-- UserBlock -->
+          <div class="userbar">
+             <img src="NinjaAvatar.png" class="img-circle userbar-avatar">
+          <ul class="userbar-text">
+            <li>Dr.Pepper</li>
+            <li><a href="setting.html">Setting</a> <a href="#">Log off</a></li>
+          </ul>
+          </div>
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<!---------------------------MAIN --------------------------------------->
+    <div class="container">
+<!---------------------------START of MAIN row -------------------------->
+      <h2>Log In</h2>
+<!----------------------------LeftColumn -------------------------------->
+        <div class="col-md-8">
+
+            <div class="row" style="margin-top: 20px">
+                <div class="alert alert-danger"> <p style="color: darkred">Wrong password!</p></div>
+            </div>
+
+            <div class="register"><!--start of register-->
+                <div class="login-form"><span>Login</span></div>
+                <div><input type="text" class="form-control reg" maxlength="300" name="text" aria-describedby="basic-addon1"></div>
+
+                <div class="login-form"><span>Password</span></div>
+                <div><input type="password" class="form-control reg" maxlength="50" name="password" aria-describedby="basic-addon1" placeholder="Password length (minimum 5)" pattern=".{5,}" required="required" value=""></div>
+
+                <div><button type="submit" class="btn btn-default button-ask" style="margin-left: 200px">Log In</button></div>
+
+                <div class="row signup-link" style="margin-left: 200px">
+                  <a href="signup.html" class="signup-link">Create new account</a>
+                </div>
+            </div> <!--end of register-->
+        </div>
+<!----------------------------Right Column -------------------------------->
+        <div class="col-md-3 col-md-offset-1">
+<!----------------------------Tag Cloud -------------------------------->
+          <h2 class="padding-header">Popular tags</h2>
+          <ul class="tagCloud">
+            <li><a href="#" class="style1">Perl</a></li>
+            <li><a href="#" class="style3">C++</a></li>
+            <li><a href="#" class="style2">Firefox</a></li>
+            <li><a href="#" class="style4">ParkMail</a></li>
+            <li><a href="#" class="style1">php</a></li>
+            <li><a href="#" class="style3">PyCharm</a></li>
+            <li><a href="#" class="style2">Div</a></li>
+            <li><a href="#" class="style4">Voloshin</a></li>
+            <li><a href="#" class="style1">Python</a></li>
+          </ul>
+          <h2 class="padding-header" style="margin-top: 30px;">Best Members</h2>
+          <ul class="bestMember">
+            <li><a href="#">Darov</a> </li>
+            <li><a href="#">Timur</a> </li>
+            <li><a href="#">Aliev</a> </li>
+            <li><a href="#">Dr.Pepper</a> </li>
+          </ul>
+        </div>
+
+        </div> <!--END of row-->
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  </body>
+</html>
